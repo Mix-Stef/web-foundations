@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color:#222;
+}
+
+h1 {
+    color:#1a4d7a;
+    font-size: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+
+.section h2 {
+    color:#555;
+    font-size: 18px;
+}
+
+.section {
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 16px;
+    width: 360px
+}
+
+table {
+    border-collapse: collapse;   /* merge double borders into one line */
+    margin: 12px 0;              /* 12px top & bottom, 0 left & right */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #e8eef4;
+}
+
+tbody tr:hover {
+    background-color: #bb141a;   /* highlight the row under the mouse */
+}
+
+.sheets {
+    display: flex;            /* children go in a row */
+    flex-wrap: wrap;          /* wrap to the next line if there's no room */
+    gap: 16px;                /* space between children */
+    align-items: flex-start;  /* line them up by their top edges */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.vapour {
+    background-color: aqua;
+}
+
+.liquid {
+    background-color: rgb(219, 223, 96);
+}
+
+
+.button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: pointer;
+    width: 60px;
+}
+
+.button:hover{
+    background-color: cadetblue;
+}

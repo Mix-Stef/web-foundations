@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>My heater</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <div class="sheets">
+
+        <div class="section">
+            <h1>Heater E-100</h1>             <!-- biggest heading -->
+            <h2>Specifications</h2>           <!-- smaller heading (h1 to h6) -->
+
+            <p>Duty is <b>120 kW</b> and the fluid is <i>water</i>.</p>
+
+            <ul>                              <!-- unordered (bullet) list -->
+                <li>Inlet: 298 K</li>           <!-- list item -->
+                <li>Outlet: 350 K</li>
+            </ul>
+
+            <ol>                              <!-- ordered (numbered) list -->
+                <li>Pump</li>
+                <li>Heater</li>
+                <li>Flash drum</li>
+            </ol>
+
+            <a href="https://en.wikipedia.org/wiki/Heat_exchanger">Read about heat exchangers</a>
+
+            <div>A div is a plain box used to group things.</div>
+            <span>A span is a plain piece of inline text.</span>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stream</th>
+                        <th>T (K)</th>
+                        <th>P (kPa)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>S1</td>
+                        <td>298.15</td>
+                        <td>101.3</td>
+                    </tr>
+                    <tr>
+                        <td>S2</td>
+                        <td>350.00</td>
+                        <td>101.3</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <label>
+            Outlet temperature (K):
+            <input type="number" value="350">
+            </label>
+
+            <label>
+            Fluid:
+            <select>
+                <option>Water</option>
+                <option>Methane</option>
+                <option>Ethanol</option>
+            </select>
+            </label>
+
+            <label>
+            <input type="checkbox"> Adiabatic
+            </label>
+
+            <button class="button">Solve</button>
+        </div>
+
+        <div class="section">
+            <h1>Flash Drum V-100</h1>
+            <h2>Operating Conditions</h2>
+
+
+            <p>This is a flash drum. It reduces the pressure to <b>1bar</b> so that
+            the liquid will evaporate</p>
+            <h3>Feed Components</h3>
+            <ul>
+                <li>Methane</li>
+                <li>Ethane</li>
+                <li>Propane</li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stream</th>
+                        <th>T (K)</th>
+                        <th>P (kPa)</th>
+                        <th>Phase</th>
+                    </tr>
+                </thead>
+                <tbody id="stream-rows"></tbody>
+            </table>
+
+
+            <div class="form">
+                <label>
+                    Temperature (°C):
+                    <input id="temp-input" type="number" value="80">
+                </label>
+                <label>
+                    Pressure (kPa):
+                    <input id="pressure-input" type="number" value="101.3">
+                </label>
+                <button id="heat-feed" class="button">Feed +10 K</button>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="dom.js"></script>
+    </body>
+
+</html>
