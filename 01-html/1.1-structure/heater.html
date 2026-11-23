@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Unit Operations Handbook</h1>
+      <p>Unit Operations Handbook</p>
       <nav class="crumbs">
         <ul>
           <li><a href="#">Home</a></li>
@@ -24,27 +24,35 @@
     <main>
       <article>
         <header>
-          <h2>Heater E-100</h2>
+          <h1>Heater E-100</h1>
           <p>Last revised: <time datetime="2026-11-23">23 November 2026</time></p>
         </header>
         <section>
           <h2>Process data</h2>
           <h3>Inlet</h3>
-          <p>Molar Flow: 10kmol/h</p>
-          <p>Temperature: 120 &deg; C</p>
-          <p>Pressure: 10N/m<sup>2</sup></p>
+          <dl>
+            <dt>Inlet temperature</dt>
+            <dd>25 °C</dd>
+            <dt>Inlet pressure</dt>
+            <dd>3.0 bar(g)</dd>
+          </dl>
           <h3>Outlet</h3>
-          <p>Density: 10kg/m<sup>3</sup></p>
-          <p>Temperature: 120 &deg; C</p>
-          <p>Pressure: 105N/m<sup>2</sup></p>
+          <dl>
+            <dt>Outlet temperature</dt>
+            <dd>150 °C</dd>
+            <dt>Design pressure</dt>
+            <dd>2.8 bar(g)</dd>
+          </dl>
         </section>
         <section>
           <h2>Design data</h2>
           <dl>
-            <dt>Design temperature</dt>
-            <dd>150 °C</dd>
-            <dt>Design pressure</dt>
-            <dd>12 bar(g)</dd>
+            <dt>Mass Flow</dt>
+            <dd>m&#775 = 1000 kg/h</dd>
+            <dt>Water heat capacity</dt>
+            <dd>Cp = 4.184 kJ/(kg &#183; K)</dd>
+            <dt>Duty</dt>
+            <dd>Q = m&#775 &#183; Cp &#183; &#916; T = 145.7 kW</dd>
           </dl>
         </section>
 
@@ -56,7 +64,9 @@
           </ul>
         </aside>
 
-        <footer><p>© Prepared by Michalis</p></footer>
+        <footer>
+        <p>Prepared by: Michalis · Revision: A (Issued for review)</p>
+        </footer>
       </article>
     </main>
   </body>
